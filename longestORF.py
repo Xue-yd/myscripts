@@ -7,7 +7,7 @@ from Bio import SeqIO
 currentCid = ''
 buffer = []
 
-for record in SeqIO.parse(open("C:\\Users\\17710\\Desktop\\7.orf.fasta"),"fasta"):
+for record in SeqIO.parse(open(sys.argv[1]),"fasta"):
     cid = str(record.description).split(':')[0][1:]
 
     if currentCid == '':
