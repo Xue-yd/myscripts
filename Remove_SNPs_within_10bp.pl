@@ -2,6 +2,14 @@
 
 #use strict;
 #use warnings;
+#usage: perl Remove_SNPs_within_10bp.pl in.txt out.txt
+#in.txt:sorted by chromsome and position
+#chromsome	position
+#chr1	123456
+#chr1	123459
+#chr2	123246
+#chr2	123257
+
 use Storable qw(dclone);
 
 open(IN,"<","$ARGV[0]") or die "Can not open this file:$!";
