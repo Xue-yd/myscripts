@@ -62,14 +62,5 @@ foreach my $key2 (keys %new_hash)
 	}
 }
 
-#foreach my $kkk (keys %new_hash)
-#{
-#	foreach my $vv (@{$new_hash{$kkk}})
-#	{
-#		print OUT "$kkk:$vv\n";
-#	}
-#}
-
-
 close IN;
 close OUT;
